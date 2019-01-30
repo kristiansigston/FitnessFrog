@@ -11,13 +11,11 @@
 
         <div class="col-md-6">
 
-            @{ 
-                var formattedDate = String.Format("{0:}", Model.Date);
-            }
+
 
             <div class="form-group">
                 @Html.LabelFor(m => m.Date, new { @class = "control-label" })
-                @Html.TextBoxFor(m => m.Date, "{0:d}", new { @class = "form-control" })
+                @Html.TextBoxFor(m => m.Date, "{0:D}", new { @class = "form-control" })
 
             </div>
 
