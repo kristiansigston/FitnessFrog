@@ -15,13 +15,13 @@
 
             <div class="form-group">
                 @Html.LabelFor(m => m.Date, new { @class = "control-label" })
-                @Html.TextBoxFor(m => m.Date, "{0:D}", new { @class = "form-control" })
+                @Html.TextBoxFor(m => m.Date, "{0:D}", new { @class = "form-control datepicker" })
             </div>
 
             <div class="form-group">
                 @Html.LabelFor(m => m.ActivityId, new { @class = "control-label" })
                 @Html.DropDownListFor(m => m.ActivityId, 
-                (SelectList) ViewBag.ActivitiesSelectListItems, "", new { @class = "form-control" })
+                (SelectList) ViewBag.ActivitiesSelectListItems, "", new { @class = "form-control"})
             </div>
 
             <div class="form-group">
