@@ -91,7 +91,7 @@ namespace Treehouse.FitnessFrog.Controllers
             }
 
             // TODO Populate the activities select list items viewbag properties.
-
+            SetupActvitiesSelectListItems();
             // Pass the netry into the view.
             return View(entry);
         }
